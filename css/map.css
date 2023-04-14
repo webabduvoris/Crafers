@@ -1,0 +1,127 @@
+	#map {
+		margin: 0;
+		padding: 0;
+		background-color: white;
+			position: relative;
+	}
+	#map svg {
+		margin: 0 auto;
+		width: 100%;
+	}
+	#map svg path {
+		fill: #00394f;
+		stroke: #eee;
+		stroke-width: .25;
+	}
+	
+	#rus::after{
+		content: "";
+		width: 50px;
+		height: 50px;
+		background: url(../img/logo.svg);
+		position: absolute;
+	}
+
+	#map svg .China:hover #chi_map{
+		opacity: 1;
+	}
+	
+	#map svg path:hover {
+		fill: #a1daee;
+		transition: .6s all;
+		cursor: pointer;
+	}
+	
+	path.Russian::after {
+		width: 30px;
+		height: 30px;
+		background-color: yellow;
+	}
+	
+	#ru_map {
+		width: 2vw;
+    position: absolute;
+    top: 11%;
+    right: 26%;
+    cursor: pointer;
+	}
+
+
+	#qz_map{
+		width: 2vw;
+		position: absolute;
+		top: 21%;
+    	right: 33%;
+		cursor: pointer;
+	}
+
+	#taj_map{
+		width: 1vw;
+		position: absolute;
+		top: 27%;
+    	right: 31%;
+		cursor: pointer;
+	}
+
+	#kor_map{
+		width: 1vw;
+		position: absolute;
+		top: 25%;
+		right: 14%;
+		cursor: pointer;
+	}
+
+	#uae_map{
+		width: 1.5vw;
+		position: absolute;
+		top: 39%;
+		right: 38%;
+		cursor: pointer;
+	}
+
+	#chi_map{
+		opacity: 1;
+		width: 1.5vw;
+		position: absolute;
+		top: 32%;
+    	right: 23%;
+		cursor: pointer;
+	}
+
+	#tm_map{
+		width: 1vw;
+		position: absolute;
+		top: 28%;
+    	right: 35%;
+		cursor: pointer;
+	}
+
+
+	#jap_map{
+		width: 1vw;
+		position: absolute;
+		top: 31%;
+    	right: 13.4%;
+		cursor: pointer;
+	}
+
+
+	#aze_map{
+		width: 1vw;
+		position: absolute;
+		top: 28%;
+    	right: 38%;
+		cursor: pointer;
+	}
+
+
+	#ge_map{
+		width: 1vw;
+		position: absolute;
+		top: 28%;
+    	right: 41%;
+		cursor: pointer;
+	}
+
+
+	

@@ -115,14 +115,6 @@ $(function () {
         }
     });
 
-        // // Sections background image from data background
-        // const pageSection = $(".bg-img, section");
-        // pageSection.each(function (indx) {
-        //     if ($(this).attr("data-background")) {
-        //         $(this).css("background-image", "url(" + $(this).data("background") + ")");
-        //     }
-        // });
-    
 
 
     

@@ -3196,8 +3196,55 @@ font-family: "Coolvetica";    display: inline;
     transition-timing-function: ease-in-out;
 }
 
-/* facilities */
+.partners a{
+    color: black;
+    text-decoration: underline rgb(73, 2, 105);
+}
 
+.partners p{
+    color: black;
+}
+
+.partners .booking-box .head-box h4{
+    color: black;
+}
+
+.partners .booking-box{
+    max-width: 500px;
+    margin: 55px auto;
+    margin-bottom: 0;
+    background-color: #fff;
+    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+    border-radius: 20px;
+}
+
+
+.partners .booking-box textarea{
+    border: 1px solid gray;
+    border-radius: 6px;
+    color: black;
+    padding: 15px;
+}
+
+
+.partners .booking-box textarea::placeholder{
+    color: black;
+}
+
+.partners .form1 .input1_inner input{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    color: black !important;
+    padding: 19.5px 40px 20px 19.5px;
+    background: transparent;
+    border: 1px solid gray;
+}
+
+
+.partners .input1_inner input::placeholder {
+    color: #000 !important;
+}
 
 
 
@@ -4982,7 +5029,7 @@ font-family: "Coolvetica";    font-size: 15px;
     display: block;
     width: 100%;
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
     padding: 19.5px 40px 20px 19.5px;
     background: #222;
     border: none;
@@ -5530,6 +5577,17 @@ font-family: "Coolvetica";    ;
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+    height: 450px;
+
+}
+
+
+.products .item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    height: 400px;
+
 }
 
 
@@ -5550,12 +5608,16 @@ font-family: "Coolvetica";    ;
 
 
 .news .item img {
-    -webkit-transition: all .5s;
+    -webkit-transition: all .3s;
     transition: all .5s;
     -webkit-filter: brightness(100%);
     height: 476px;
     filter: brightness(0.5);
     object-fit: cover;
+}
+
+.news .item img:hover{
+    transform: scale(1.1);
 }
 
 
@@ -5726,8 +5788,22 @@ font-family: "Coolvetica";    display: block;
     padding-bottom: 10px ;
 }
 
+
+.products .item  .con {
+    margin: -170px 20px 4px;
+    padding: 20px;
+    
+    border-radius: 16px;
+    overflow: hidden;
+    -webkit-transition: .2s cubic-bezier(.3, .58, .55, 1);
+    transition: .2s cubic-bezier(.3, .58, .55, 1);
+    bottom: 28px;
+    position: relative;
+}
+
+
 .news .item .con {
-    margin: -155px 20px 4px;
+    margin: -169px 20px 4px;
     padding: 20px;
     
     border-radius: 16px;

@@ -19,9 +19,8 @@
 
  	#map #checked{
 		fill: rgb(142 32 186);
+		position: relative;
 	}
-
-
 
 	.flags-inner{
 		display: flex;

@@ -30,11 +30,19 @@
 26. Slider Grid Background
 
 ------------------------------------------------------- */
+
+    
+
+
 $(function () {
     "use strict";
     var wind = $(window);
     
-    
+
+    var exampleEl = document.getElementById('example')
+    var tooltip = new bootstrap.Tooltip(exampleEl, options)
+
+
     // ScrollIt
     $.scrollIt({
         upKey: 38, // key code to navigate to the next section

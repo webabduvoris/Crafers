@@ -1384,7 +1384,7 @@ select {
 }
 
 .cappa-menu-footer div.reservation .call span {
-font-family: "Coolvetica";    font-size: 24px;
+font-family: "Coolvetica";    font-size: 18px;
     color: #fff;
 }
 
@@ -3926,6 +3926,7 @@ font-family: "Coolvetica";    letter-spacing: 3px;
     opacity: .2;
 }
 
+
 @media screen and (max-width: 991px) {
     .rooms3 .square-flip {
         margin-bottom: 30px;
@@ -3960,21 +3961,22 @@ font-family: "Coolvetica";    letter-spacing: 3px;
 .page-list li {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .page-list li+li {
     margin-top: 10px;
 }
 
-.page-list-icon {
+/* .page-list-icon {
     display: flex;
     align-items: center;
-}
+} */
 
-.page-list-icon span {
-    font-size: 18px;
-    color: #35134e;
+.page-list-icon img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
 }
 
 .page-list-text {

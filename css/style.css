@@ -78,11 +78,12 @@ body {
 }
 
 p {
-font-family: "Coolvetica";    font-size: 15px;
+    font-family: "Coolvetica";    
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.75em;
     color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 h1,
@@ -141,7 +142,7 @@ input[type="file"],
 textarea {
     max-width: 100%;
     margin-bottom: 15px;
-    padding: 10px 0;
+    padding: 10px;
     height: auto;
     background-color: transparent;
     -webkit-box-shadow: none;
@@ -153,9 +154,8 @@ textarea {
     line-height: 1.5em;
 font-family: "Coolvetica";    font-size: 15px;
     font-weight: 400;
-    color: #3A1078;
+    color: white;
     background-image: none;
-    border-bottom: 1px solid #333;
     border-color: ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
@@ -164,6 +164,48 @@ textarea:focus {
     border-bottom-width: 1px;
     border-color: #aa8453;
 }
+
+
+.box-gray{
+    background-color: #777;
+    padding: 45px;
+}
+
+.box-gray textarea{
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+.box-gray textarea::placeholder{
+    color: white;
+}
+
+.box-gray .input1_inner input{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+
+    color: white;
+}
+
+.box-gray .input1_inner input:focus{
+    background-color: transparent;
+    color: white;
+}
+
+
+.box-gray .input1_inner input::placeholder{
+    color: white !important;
+}
+
+
+
+
+/* .form-control:focus{
+    box-shadow: rgba(125, 18, 188, 0.25) 0px 0px 0px 0.25rem;
+    border-color: #320c63;
+} */
 
 input[type="submit"],
 input[type="reset"],
@@ -385,20 +427,20 @@ blockquote cite:before {
 .bg-img1 {
     background-size: cover;
     background-repeat: no-repeat;
-    background: url('../img/products/product3.jpg');
+    background: url('../img/products/3.jpg');
 }
 
 .bg-img2 {
     background-size: cover;
     background-repeat: no-repeat;
-    background: url('../img/products/product4.jpg');
+    background: url('../img/products/20.jpg');
 }
 
 
 .bg-img3 {
     background-size: cover;
     background-repeat: no-repeat;
-    background: url('../img/products/product-slider.JPG');
+    background: url('../img/products/10.jpg');
 }
 
 .bg-img4{
@@ -406,7 +448,7 @@ blockquote cite:before {
 }
 
 .bg-img5{
-    background: url('../img/careers.jpg');
+    background: url('../img/hrm-bg.jpg');
 }
 
 
@@ -448,6 +490,42 @@ font-family: "Coolvetica";    ;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+
+.response-container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+
+}
+
+.response{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: white;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.response img{
+    margin-bottom: 15px;
+}
+
+.response h3{
+    color: black;
+
+    margin-bottom: 0;
 }
 
 .v-middle {
@@ -1094,7 +1172,7 @@ font-family: "Coolvetica";    font-weight: 400;
 /* ======= Navbar style ======= */
 .cappa-wrap {
     display: block;
-    background: #1b1b1b;
+    background:rgb(22, 0, 32);
     left: 0;
     z-index: 101;
     position: fixed;
@@ -1132,8 +1210,7 @@ font-family: "Coolvetica";    font-weight: 400;
 
 .cappa-menu ul {
     position: relative;
-    margin-top: 180px;
-    margin-bottom: 30px;
+    margin-top: 60px;
     padding: 0;
 }
 
@@ -1158,10 +1235,10 @@ font-family: "Coolvetica";    font-weight: 400;
 }
 
 .cappa-menu ul li {
-    margin: 10px 0 10px 0;
     padding: 0 0 10px 0;
     list-style: none;
-font-family: "Coolvetica";    font-size: 15px;
+    font-family: "Coolvetica";    
+    font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -1328,9 +1405,8 @@ select {
 /* navigation footer */
 .cappa-menu-footer {
     position: relative;
-    bottom: 30px;
     left: 0;
-    padding: 90px 0px 0px 0px;
+    margin-top: 30px;
     color: #999;
 }
 
@@ -1461,9 +1537,9 @@ font-family: "Coolvetica";    font-size: 18px;
 
 .cappa-header.scrolled {
     position: fixed;
-    padding: 25px 0;
+    padding: 15px 0;
     top: 0;
-    background: #1b1b1b;
+    background: rgb(22, 0, 32);
     -webkit-transition: .0s all ease;
     -o-transition: .0s all ease;
     transition: .0s all ease;
@@ -1683,6 +1759,7 @@ font-family: "Coolvetica";    font-size: 10px;
 .logo {
     padding: 0;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .logo-img {
@@ -3057,6 +3134,17 @@ font-family: "Coolvetica";    text-transform: uppercase;
     margin-bottom: 30px;
 }
 
+.req__item {
+    margin-bottom: 25px
+    ;
+}
+
+.req__item p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .rooms1 .item:hover img {
     -webkit-filter: none;
     filter: none;
@@ -4066,7 +4154,7 @@ font-family: "Coolvetica";    letter-spacing: 3px;
     z-index: 1;
     margin-bottom: 30px;
     line-height: 1;
-    border: 2px solid #3A1078;
+    
 }
 
 .single-inner {
@@ -4318,6 +4406,16 @@ font-family: "Coolvetica";    text-transform: uppercase;
 
     .services .content .date h3 {
         font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .countries{
+        flex-direction: column;
+    }
+
+    #map-flag{
+        width: 40px;
     }
 }
 
@@ -5003,7 +5101,7 @@ font-family: "Coolvetica";    font-size: 15px;
 }
 
 .btn-form1-submit:hover {
-    background: #222;
+    background: #6c2865;
 }
 
 .btn-form1-submit:focus {
@@ -5579,8 +5677,7 @@ font-family: "Coolvetica";    ;
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
-    height: 450px;
-
+    height: 500px;
 }
 
 
@@ -5588,9 +5685,8 @@ font-family: "Coolvetica";    ;
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
-    height: 400px;
-
 }
+
 
 
 .news .owl-nav button.owl-next,
@@ -5608,12 +5704,19 @@ font-family: "Coolvetica";    ;
     transition: all 1s ease;
 }
 
+.new-single{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
 
 .news .item img {
     -webkit-transition: all .3s;
     transition: all .5s;
     -webkit-filter: brightness(100%);
-    height: 476px;
+    width: 100%;
+    height: 100%;
     filter: brightness(0.5);
     object-fit: cover;
 }
@@ -5774,14 +5877,14 @@ font-family: "Coolvetica";    display: block;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: rgb(29, 2, 2);
+    color: white;
 }
 
 .news .item .date i {
 font-family: "Coolvetica";    display: block;
     font-size: 24px;
     font-style: normal;
-    color: #723737;
+    color: white;
 }
 
 
@@ -5812,9 +5915,12 @@ font-family: "Coolvetica";    display: block;
     overflow: hidden;
     -webkit-transition: .2s cubic-bezier(.3, .58, .55, 1);
     transition: .2s cubic-bezier(.3, .58, .55, 1);
-    bottom: 28px;
+    bottom: 15px;
     position: relative;
 }
+
+
+
 
 .news .item .con .category {
 font-family: "Coolvetica";    text-transform: uppercase;
@@ -5863,6 +5969,37 @@ font-family: "Coolvetica";    font-weight: 400;
 .news .item .con i {
     color: #fff;
     font-size: 20px;
+}
+
+
+.continent{
+    margin-bottom: 50px;
+}
+
+.continent h3{
+    color: #777;
+    letter-spacing: 0.3rem;
+    border-bottom: 1px solid #777;
+}
+
+.country-inner{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #777;
+}
+
+.countries{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.countries-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 
@@ -6246,13 +6383,13 @@ font-family: "Coolvetica";    text-transform: uppercase;
 }
 
 .butn-dark a:hover  {
-    background-color: transparent;
-    border: 1px solid #3A1078;
+    background-color: #6c2865;
+    color: white;
 }
 
 
 .butn-dark:hover span {
-    color: black;
+    color: white;
 }
 
 .butn-dark a:after {

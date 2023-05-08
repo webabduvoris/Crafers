@@ -6,7 +6,7 @@
 02. Logo & Menu scroll sticky
 03. Menu Navigation
 04. Sub Menu
-05. Sections background image from data background 
+05. Sections background image from data background
 06. Animations
 07. YouTubePopUp
 08. Testimonials owlCarousel
@@ -31,16 +31,16 @@
 
 ------------------------------------------------------- */
 
-    
+
 
 
 $(function () {
     "use strict";
     var wind = $(window);
-    
 
-    var exampleEl = document.getElementById('example')
-    var tooltip = new bootstrap.Tooltip(exampleEl, options)
+
+    // var exampleEl = document.getElementById('example')
+    // var tooltip = new bootstrap.Tooltip(exampleEl, options)
 
 
     // ScrollIt
@@ -55,9 +55,9 @@ $(function () {
     });
 
 
-    
-    
-    
+
+
+
     // Logo & Menu scroll sticky
     $(window).scroll(function () {
         var $this = $(this)
@@ -87,11 +87,11 @@ $(function () {
                 navbar.addClass('sleep');
             }
         }
-    });      
-      
-        
+    });
 
-    // Menu Navigation    
+
+
+    // Menu Navigation
     $('.cappa-js-cappa-nav-toggle').on('click', function (e) {
         var $this = $(this);
         e.preventDefault();
@@ -125,9 +125,9 @@ $(function () {
 
 
 
-    
-     
-    // Sub Menu 
+
+
+    // Sub Menu
     $('.cappa-menu li.cappa-menu-sub>a').on('click', function () {
         $(this).removeAttr('href');
         var element = $(this).parent('li');
@@ -146,12 +146,12 @@ $(function () {
         }
     });
     $('.cappa-menu>ul>li.cappa-menu-sub>a').append('<span class="holder"></span>');
-    
 
 
 
-    
-    
+
+
+
     // Animations
     var contentWayPoint = function () {
         var i = 0;
@@ -185,12 +185,12 @@ $(function () {
     $(function () {
         contentWayPoint();
     });
-    
-    
+
+
     // YouTubePopUp
     $("a.vid").YouTubePopUp();
-    
-    
+
+
     // Testimonials owlCarousel *
     $('.testimonials .owl-carousel').owlCarousel({
         loop: true,
@@ -213,7 +213,7 @@ $(function () {
             }
         }
     });
-    
+
     // Rooms 1 owlCarousel *
     $('.rooms1 .owl-carousel').owlCarousel({
         loop: true,
@@ -237,7 +237,7 @@ $(function () {
             }
         }
     });
-    
+
     // Rooms 2 owlCarousel *
     $('.rooms2 .owl-carousel').owlCarousel({
         loop: true,
@@ -261,7 +261,7 @@ $(function () {
             }
         }
     });
-    
+
     // Rooms 3 owlCarousel *
     $('.rooms3 .owl-carousel').owlCarousel({
         loop: true,
@@ -285,7 +285,7 @@ $(function () {
             }
         }
     });
-    
+
     // Rooms Page owlCarousel *
     $('.rooms-page .owl-carousel').owlCarousel({
         loop: true,
@@ -308,7 +308,7 @@ $(function () {
             }
         }
     });
-    
+
     // Pricing owlCarousel *
     $('.pricing .owl-carousel').owlCarousel({
         loop: true,
@@ -332,7 +332,7 @@ $(function () {
             }
         }
     });
-    
+
     // News owlCarousel *
     $('.news .owl-carousel').owlCarousel({
         loop: true,
@@ -359,7 +359,7 @@ $(function () {
             }
         }
     });
-    
+
     // Team owlCarousel *
     $('.team .owl-carousel').owlCarousel({
         loop: true,
@@ -383,7 +383,7 @@ $(function () {
             }
         }
     });
-    
+
     // Clients owlCarousel *
     $('.clients .owl-carousel').owlCarousel({
         loop: true,
@@ -407,7 +407,7 @@ $(function () {
             }
         }
     });
-    
+
     // Restaurant Menu owlCarousel
     $('.restaurant-menu .owl-carousel').owlCarousel({
         loop: true,
@@ -431,7 +431,7 @@ $(function () {
             }
         }
     });
-    
+
     // Restaurant Menu Tabs
     $(".restaurant-menu .tabs-icon").on("click", ".item", function () {
         $(".item").removeClass("active");
@@ -442,9 +442,9 @@ $(function () {
     $(".restaurant-menu .tabs-icon").on("click", ".owl-item", function () {
         $(this).addClass("actived").siblings().removeClass("actived");
     });
-    
-    
-    
+
+
+
     // Accordion Box (for Faqs)
     if ($(".accordion-box").length) {
         $(".accordion-box").on("click", ".acc-btn", function () {
@@ -465,8 +465,8 @@ $(function () {
             }
         });
     }
-    
-    
+
+
     // MagnificPopup Gallery
     $('.gallery').magnificPopup({
         delegate: '.popimg',
@@ -493,7 +493,7 @@ $(function () {
         preloader: false,
         fixedContentPos: false
     });
-    
+
 
     // Smooth Scrolling
     $('a[href*="#"]')
@@ -525,7 +525,7 @@ $(function () {
             }
         }
     });
-    
+
     //  Scroll back to top
     var progressPath = document.querySelector('.progress-wrap path');
     var pathLength = progressPath.getTotalLength();
@@ -558,26 +558,27 @@ $(function () {
         }, duration);
         return false;
     })
-    
-    
+
+
     // Select2
     $('.select2').select2({
         minimumResultsForSearch: Infinity,
     });
-    
-    
+
+
     // Datapicker
     $(".datepicker").datepicker({
         orientation: "top"
     });
-     
+
+    $('[data-toggle="tooltip"]').tooltip()
 });
 
 
-// Slider  
+// Slider
 $(document).ready(function () {
     var owl = $('.header .owl-carousel');
-    
+
     // Slider owlCarousel - (Inner Page Slider)
     $('.slider .owl-carousel').owlCarousel({
         items: 1,
@@ -601,7 +602,7 @@ $(document).ready(function () {
             }
         }
     });
-    
+
     // Slider owlCarousel (Homepage Slider)
     $('.slider-fade .owl-carousel').owlCarousel({
         items: 1,
@@ -727,4 +728,3 @@ var form = $('.contact__form'),
             }
         }
     });
-    

@@ -30,9 +30,9 @@
 	}
 
 	#map-flag{
-		width: 5vw;
+		width: 3.5vw;
 		cursor: pointer;
-		transition: .3s ease-in;
+		transition: .5s ease-in;
 	}
 
 	#map-flag:hover{
@@ -42,4 +42,6 @@
 	
 
 
+
+	
 	

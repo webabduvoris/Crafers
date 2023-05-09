@@ -1001,6 +1001,11 @@ font-family: "Coolvetica";    ;
     .rooms1 .owl-theme .owl-nav {
         display: none;
     }
+
+
+    .box-gray{
+        padding: 15px;
+    }
 }
 
 
@@ -3285,8 +3290,16 @@ font-family: "Coolvetica";    display: inline;
 }
 
 .partners a{
-    color: black;
-    text-decoration: underline rgb(73, 2, 105);
+    color: white;
+    background-color: #ffc000;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    transition: .3s ease-in;
+}
+
+.partners a:hover{
+    background-color: #e4ae0d;
 }
 
 .partners p{
@@ -4062,9 +4075,9 @@ font-family: "Coolvetica";    letter-spacing: 3px;
 } */
 
 .page-list-icon img {
-    width: 16px;
+    width: 35px;
     height: 16px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .page-list-text {
@@ -6528,12 +6541,18 @@ font-family: "Coolvetica";    text-transform: uppercase;
 
 
 .job-btn{
-    background-color: #3A1078;
+    background-color: #110224;
     color: white;
     outline: none;
     padding: 10px;
     border-radius: 6px;
     font-size: 18px;
+    transition: .3s;
+}
+
+
+.job-btn:hover{
+    background-color: #6c2865;
 }
 
 

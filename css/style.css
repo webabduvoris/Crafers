@@ -425,20 +425,17 @@ blockquote cite:before {
 }
 
 .bg-img1 {
-    background-size: cover;
     background-repeat: no-repeat;
     background: url('../img/products/3.jpg');
 }
 
 .bg-img2 {
-    background-size: cover;
     background-repeat: no-repeat;
     background: url('../img/products/20.jpg');
 }
 
 
 .bg-img3 {
-    background-size: cover;
     background-repeat: no-repeat;
     background: url('../img/products/10.jpg');
 }
@@ -1126,6 +1123,9 @@ font-family: "Coolvetica";    font-weight: 400;
     color: black;
 }
 
+.about_title{
+    text-align: center;
+}
 
 .about__logo svg{
     width: 150px ;
@@ -1137,6 +1137,7 @@ font-family: "Coolvetica";    font-weight: 400;
 .about-descr h6{
     color: black;
     font-family: "Coolvetica";
+    text-align: center;    
 
 }
 
@@ -2100,7 +2101,8 @@ hr {
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: 25% 35%;
+    background-repeat: no-repeat;
 }
 
 .slider-fade .item .caption {
